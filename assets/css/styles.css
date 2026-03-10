@@ -665,7 +665,7 @@ body.content-ready .navbar {
   opacity: 0;
 
   --r-x: 0;
-  --r-y: 40px;
+  --r-y: 0;
   --r-scale: 1;
 
   transform: translate(var(--r-x), var(--r-y)) scale(var(--r-scale));
@@ -674,9 +674,9 @@ body.content-ready .navbar {
     opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 
+  transition-delay: var(--delay, 0ms);
+
   will-change: opacity, transform;
-  backface-visibility: hidden;
-  transform-origin: center;
 }
 
 /* variantes */
