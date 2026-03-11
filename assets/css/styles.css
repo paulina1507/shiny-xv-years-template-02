@@ -94,7 +94,7 @@ body.content-ready .site-root {
   opacity: 1;
 }
 
-.reveal>* {
+.reveal > * {
   transition-delay: calc(var(--i, 0) * 0.08s);
 }
 
@@ -281,9 +281,11 @@ body.content-ready .navbar {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.15) 0%,
-      rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
   z-index: 0;
 }
 
@@ -297,10 +299,12 @@ body.content-ready .navbar {
   display: block;
   width: 120px;
   height: 1px;
-  background: linear-gradient(to right,
-      transparent,
-      var(--gold-soft),
-      transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--gold-soft),
+    transparent
+  );
   margin: 12px auto 8px;
 }
 
@@ -533,9 +537,11 @@ body.content-ready .navbar {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.55));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.55)
+  );
 }
 
 /* contenido encima */
@@ -646,7 +652,6 @@ body.content-ready .navbar {
 }
 
 @media (max-width: 480px) {
-
   /* ACUARELAS EXTERNAS */
   .acuarela-left,
   .acuarela-right {
@@ -952,7 +957,6 @@ body.content-ready .navbar {
 /* ========================================================= */
 
 @media (max-width: 480px) {
-
   /* Espacio entre tarjetas */
   #ubicacion-lista {
     gap: 70px;
@@ -1108,10 +1112,12 @@ body.content-ready .navbar {
 /* ========================================================= */
 
 .timeline-programa .item.lit::before {
-  background: linear-gradient(to bottom,
-      var(--plumbago-light),
-      var(--plumbago-light),
-      var(--plumbago));
+  background: linear-gradient(
+    to bottom,
+    var(--plumbago-light),
+    var(--plumbago-light),
+    var(--plumbago)
+  );
   opacity: 1;
   transform: translateX(-50%) scale(1.35);
   box-shadow: var(--shadow);
@@ -1208,7 +1214,6 @@ body.content-ready .navbar {
 }
 
 @media (max-width: 480px) {
-
   /* mover la línea un poco a la izquierda */
   .timeline-programa::before {
     left: 50%;
@@ -2029,14 +2034,18 @@ body.footer-ready footer.site-footer {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(45deg,
+    linear-gradient(
+      45deg,
       transparent 49.6%,
       rgba(0, 0, 0, 0.1) 50%,
-      transparent 50.4%),
-    linear-gradient(-45deg,
+      transparent 50.4%
+    ),
+    linear-gradient(
+      -45deg,
       transparent 49.6%,
       rgba(0, 0, 0, 0.1) 50%,
-      transparent 50.4%);
+      transparent 50.4%
+    );
   pointer-events: none;
   z-index: 2;
 }
@@ -2445,12 +2454,15 @@ body.footer-ready .music-btn {
 .butterfly {
   position: absolute;
   width: 72px;
-  opacity: .75;
-  animation:
-    drift 9s ease-in-out infinite,
-    flutter 2.8s ease-in-out infinite;
+  opacity: 0.75;
   will-change: transform;
   backface-visibility: hidden;
+  animation: drift 9s ease-in-out infinite;
+}
+
+.butterfly img {
+  animation: flutter 2.4s ease-in-out infinite;
+  transform-origin: center;
 }
 
 .butterfly-left {
@@ -2458,7 +2470,8 @@ body.footer-ready .music-btn {
   top: 200px;
   left: 4%;
   transform: rotate(var(--r));
-  animation: drift 3s ease-in-out infinite;
+  animation: drift 10s ease-in-out infinite;
+  animation-delay: -6s;
 }
 
 .butterfly-right {
@@ -2471,21 +2484,26 @@ body.footer-ready .music-btn {
 }
 
 @keyframes flutter {
-
   0%,
   100% {
     transform: scale(1);
   }
 
-  50% {
-    transform: scale(1.06);
+  25% {
+    transform: scale(1.04);
   }
 
+  50% {
+    transform: scale(1.07);
+  }
+
+  75% {
+    transform: scale(1.04);
+  }
 }
 
 /* ANIMACIÓN */
 @keyframes drift {
-
   0% {
     transform: translate(0, 0) rotate(var(--r));
   }
@@ -2509,11 +2527,9 @@ body.footer-ready .music-btn {
   100% {
     transform: translate(0, 0) rotate(var(--r));
   }
-
 }
 
-@media (max-width:480px) {
-
+@media (max-width: 480px) {
   .butterfly-left {
     --r: -12deg;
     top: -20px;
@@ -2523,9 +2539,8 @@ body.footer-ready .music-btn {
 
   .butterfly-right {
     --r: 14deg;
-    bottom: -10px;
+    bottom: -30px;
     right: 2%;
     transform: rotate(var(--r));
   }
-
 }
