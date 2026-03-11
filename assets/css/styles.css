@@ -35,8 +35,10 @@ body {
   color: var(--negro);
   position: relative;
   min-height: 100vh;
-  padding-bottom: 90px; /* ya pensado para el footer fijo */
-  overflow-x: hidden; /* puedes incluirlo aquí */
+  padding-bottom: 90px;
+  /* ya pensado para el footer fijo */
+  overflow-x: hidden;
+  /* puedes incluirlo aquí */
 }
 
 body.lock-scroll {
@@ -92,7 +94,7 @@ body.content-ready .site-root {
   opacity: 1;
 }
 
-.reveal > * {
+.reveal>* {
   transition-delay: calc(var(--i, 0) * 0.08s);
 }
 
@@ -182,6 +184,7 @@ body.content-ready .navbar {
   .nav-toggle {
     display: block;
   }
+
   .nav-menu {
     display: none;
     position: absolute;
@@ -194,9 +197,11 @@ body.content-ready .navbar {
     background: var(--plumbago);
     gap: 18px;
   }
+
   .nav-menu.open {
     display: flex;
   }
+
   .nav-menu a {
     font-size: 18px;
   }
@@ -227,13 +232,16 @@ body.content-ready .navbar {
     opacity: 0;
     filter: blur(6px);
   }
+
   30% {
     opacity: 1;
     filter: blur(0);
   }
+
   70% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     filter: blur(4px);
@@ -273,11 +281,9 @@ body.content-ready .navbar {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.15) 0%,
-    rgba(0, 0, 0, 0.4) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.4) 100%);
   z-index: 0;
 }
 
@@ -291,12 +297,10 @@ body.content-ready .navbar {
   display: block;
   width: 120px;
   height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--gold-soft),
-    transparent
-  );
+  background: linear-gradient(to right,
+      transparent,
+      var(--gold-soft),
+      transparent);
   margin: 12px auto 8px;
 }
 
@@ -304,7 +308,8 @@ body.content-ready .navbar {
   font-family: "Great Vibes", cursive;
   font-size: clamp(34px, 7vw, 78px);
   color: var(--gold-primary);
-  letter-spacing: 1px; /* más fino */
+  letter-spacing: 1px;
+  /* más fino */
   font-weight: 400;
   line-height: 1.05;
   text-shadow: 0 6px 28px rgba(0, 0, 0, 0.45);
@@ -375,6 +380,7 @@ body.content-ready .navbar {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -404,6 +410,7 @@ body.content-ready .navbar {
     transform: translateY(0) scale(1);
     opacity: 1;
   }
+
   100% {
     transform: translateY(120px) scale(0.94);
     opacity: 0;
@@ -424,13 +431,15 @@ body.content-ready .navbar {
   display: flex;
   justify-content: center;
   position: relative;
-  overflow: visible; /* FIX */
+  overflow: visible;
+  /* FIX */
   width: 100%;
 }
 
 #presentacion.section-arco {
   padding-top: 0;
 }
+
 /* ========================================================= */
 /* ARCO BASE REFINADO */
 /* ========================================================= */
@@ -478,7 +487,8 @@ body.content-ready .navbar {
 /* ========================================================= */
 
 .hero-arco {
-  padding-top: 70px; /* separación del navbar */
+  padding-top: 70px;
+  /* separación del navbar */
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -523,11 +533,9 @@ body.content-ready .navbar {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 0.55)
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.55));
 }
 
 /* contenido encima */
@@ -574,7 +582,8 @@ body.content-ready .navbar {
 
 @media (max-width: 768px) {
   .hero-arco {
-    padding-top: 60px; /* solo respiro del navbar */
+    padding-top: 60px;
+    /* solo respiro del navbar */
   }
 
   .hero-names {
@@ -604,9 +613,12 @@ body.content-ready .navbar {
 /* ========================================================= */
 
 .arco-base.arco-hero {
-  background: transparent !important; /* ❌ elimina rectángulo rosa */
-  overflow: hidden !important; /* 🔑 activa el recorte real */
-  padding: 0 !important; /* el hero maneja su espacio */
+  background: transparent !important;
+  /* ❌ elimina rectángulo rosa */
+  overflow: hidden !important;
+  /* 🔑 activa el recorte real */
+  padding: 0 !important;
+  /* el hero maneja su espacio */
 }
 
 .acuarela-left,
@@ -634,6 +646,7 @@ body.content-ready .navbar {
 }
 
 @media (max-width: 480px) {
+
   /* ACUARELAS EXTERNAS */
   .acuarela-left,
   .acuarela-right {
@@ -651,6 +664,7 @@ body.content-ready .navbar {
     top: -20px;
   }
 }
+
 .section-arco,
 .hero-section {
   position: relative;
@@ -708,6 +722,7 @@ body.content-ready .navbar {
   --r-y: 0;
   --r-scale: 1;
 }
+
 /* ========================================================= */
 /* MARIPOSAS FUERA DEL ARCO – PRESENTACIÓN (FINAL)           */
 /* ========================================================= */
@@ -716,7 +731,8 @@ body.content-ready .navbar {
 #presentacion.section-arco {
   position: relative;
   overflow: visible;
-  min-height: 920px; /* aire vertical real */
+  min-height: 920px;
+  /* aire vertical real */
 }
 
 /* El arco SIEMPRE encima */
@@ -758,6 +774,7 @@ body.content-ready .navbar {
   margin: 28px auto;
   display: block;
 }
+
 @media (max-width: 480px) {
   .arco-base {
     width: 86%;
@@ -787,7 +804,8 @@ body.content-ready .navbar {
 #ubicacion-lista {
   display: flex;
   flex-direction: column;
-  gap: 130px; /* ← AQUÍ se controla el espacio entre tarjetas */
+  gap: 130px;
+  /* ← AQUÍ se controla el espacio entre tarjetas */
   position: relative;
   z-index: 5;
 }
@@ -868,6 +886,7 @@ body.content-ready .navbar {
     letter-spacing: 1.5px;
   }
 }
+
 /* ========================================================= */
 /* CONTENIDO INTERNO                                         */
 /* ========================================================= */
@@ -927,19 +946,23 @@ body.content-ready .navbar {
 .btn-ubicacion:focus {
   text-decoration: none;
 }
+
 /* ========================================================= */
 /* RESPONSIVE                                                */
 /* ========================================================= */
 
 @media (max-width: 480px) {
+
   /* Espacio entre tarjetas */
   #ubicacion-lista {
-    gap: 70px; /* antes 80px */
+    gap: 70px;
+    /* antes 80px */
   }
 
   /* Tarjeta */
   .ubicacion-card {
-    padding: 28px 22px; /* más ligera */
+    padding: 28px 22px;
+    /* más ligera */
     border-radius: 22px;
   }
 
@@ -1085,15 +1108,13 @@ body.content-ready .navbar {
 /* ========================================================= */
 
 .timeline-programa .item.lit::before {
-  background: linear-gradient(
-    to bottom,
-    var(--plumbago-light),
-    var(--plumbago-light),
-    var(--plumbago)
-  );
+  background: linear-gradient(to bottom,
+      var(--plumbago-light),
+      var(--plumbago-light),
+      var(--plumbago));
   opacity: 1;
   transform: translateX(-50%) scale(1.35);
-  box-shadow:var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 /* ========================================================= */
@@ -1187,6 +1208,7 @@ body.content-ready .navbar {
 }
 
 @media (max-width: 480px) {
+
   /* mover la línea un poco a la izquierda */
   .timeline-programa::before {
     left: 50%;
@@ -1298,6 +1320,7 @@ body.content-ready .navbar {
     margin: 22px auto 8px;
   }
 }
+
 /* ========================================================= */
 /* REGALOS                  */
 /* ========================================================= */
@@ -1349,12 +1372,15 @@ body.content-ready .navbar {
 #regalos.reveal.visible .regalo-item:nth-child(1) {
   transition-delay: 0.15s;
 }
+
 #regalos.reveal.visible .regalo-item:nth-child(2) {
   transition-delay: 0.3s;
 }
+
 #regalos.reveal.visible .regalo-item:nth-child(3) {
   transition-delay: 0.45s;
 }
+
 #regalos.reveal.visible .regalo-item:nth-child(4) {
   transition-delay: 0.6s;
 }
@@ -1443,6 +1469,7 @@ body.content-ready .navbar {
 .carousel-btn.right {
   right: 8px;
 }
+
 /* ========================================================= */
 /* FOOTER */
 
@@ -1465,6 +1492,7 @@ footer.site-footer {
     opacity 0.8s ease,
     transform 0.8s ease;
 }
+
 .site-footer small {
   opacity: 0.9;
 }
@@ -1493,7 +1521,8 @@ body.footer-ready footer.site-footer {
   width: 22px;
   height: 22px;
 
-  filter: brightness(0) invert(1); /* los vuelve blancos */
+  filter: brightness(0) invert(1);
+  /* los vuelve blancos */
   opacity: 0.85;
 
   transition:
@@ -1548,6 +1577,7 @@ body.footer-ready footer.site-footer {
     transform: translateY(-1px) scale(1.03);
   }
 }
+
 /* ========================================================= */
 /* PANTALLA DEL SOBRE                */
 /* ========================================================= */
@@ -1718,6 +1748,7 @@ body.footer-ready footer.site-footer {
   color: #5e7c6f;
   opacity: 0.9;
 }
+
 .rsvp-sign {
   transform: rotate(-1deg);
 }
@@ -1797,6 +1828,7 @@ body.footer-ready footer.site-footer {
     opacity: 0;
     transform: translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1887,6 +1919,7 @@ body.footer-ready footer.site-footer {
     opacity: 0;
     transform: translateY(14px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1916,6 +1949,7 @@ body.footer-ready footer.site-footer {
   color: #7c8f84;
   margin-bottom: 6px;
 }
+
 /* ====================================== */
 /* ICONOS TIPO SLIDE (SOLO 3 SECCIONES)   */
 /* ====================================== */
@@ -1968,6 +2002,7 @@ body.footer-ready footer.site-footer {
 #regalos.reveal.visible .icon {
   animation: iconReveal 0.85s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
+
 /* ========================================================= */
 /* SOBRE – DEFINITIVO, COLOR CORRECTO Y ESCALABLE            */
 /* ========================================================= */
@@ -1994,18 +2029,14 @@ body.footer-ready footer.site-footer {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(
-      45deg,
+    linear-gradient(45deg,
       transparent 49.6%,
       rgba(0, 0, 0, 0.1) 50%,
-      transparent 50.4%
-    ),
-    linear-gradient(
-      -45deg,
+      transparent 50.4%),
+    linear-gradient(-45deg,
       transparent 49.6%,
       rgba(0, 0, 0, 0.1) 50%,
-      transparent 50.4%
-    );
+      transparent 50.4%);
   pointer-events: none;
   z-index: 2;
 }
@@ -2081,7 +2112,8 @@ body.footer-ready footer.site-footer {
 
 /* contenido oculto mientras se desdobla */
 .letter-content {
-  opacity: 1; /* 👈 visible por defecto */
+  opacity: 1;
+  /* 👈 visible por defecto */
   transition: opacity 0.5s ease;
   width: 100%;
   min-height: 100%;
@@ -2201,6 +2233,7 @@ body.footer-ready footer.site-footer {
 #presentacion.editorial-text {
   padding-top: 60px;
 }
+
 .seal {
   position: absolute;
   inset: 0;
@@ -2238,12 +2271,15 @@ body.footer-ready footer.site-footer {
   0% {
     transform: scale(1);
   }
+
   35% {
     transform: scale(1.06);
   }
+
   55% {
     transform: scale(1.01);
   }
+
   100% {
     transform: scale(1);
   }
@@ -2267,7 +2303,8 @@ body.footer-ready footer.site-footer {
     inset: 0;
     margin: auto;
 
-    width: 80px; /* contenedor más chico */
+    width: 80px;
+    /* contenedor más chico */
     height: 80px;
 
     transform: none;
@@ -2286,12 +2323,15 @@ body.footer-ready footer.site-footer {
     0% {
       transform: scale(1);
     }
+
     40% {
       transform: scale(1.06);
     }
+
     70% {
       transform: scale(1.02);
     }
+
     100% {
       transform: scale(1);
     }
@@ -2361,10 +2401,12 @@ body.footer-ready .music-btn {
     transform: scale(1);
     box-shadow: 0 0 0 rgba(255, 255, 255, 0);
   }
+
   50% {
     transform: scale(1.07);
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.45);
   }
+
   100% {
     transform: scale(1);
     box-shadow: 0 0 0 rgba(255, 255, 255, 0);
@@ -2392,63 +2434,93 @@ body.footer-ready .music-btn {
 }
 
 /* CONTENEDOR */
-.butterflies{
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  z-index:2;
+.butterflies {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
 }
 
 /* BASE */
-.butterfly{
-  position:absolute;
-  width:clamp(70px,10vw,120px);
-  opacity:.62;
-  filter:blur(.4px);
-  animation:drift 16s ease-in-out infinite;
+.butterfly {
+  position: absolute;
+  width: 72px;
+  opacity: .75;
+  animation:
+    drift 16s ease-in-out infinite,
+    flutter 3.6s ease-in-out infinite;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
-.butterfly-left{
-  --r:-12deg;
-  top:200px;
-  left:4%;
-  transform:rotate(var(--r));
+.butterfly-left {
+  --r: -12deg;
+  top: 200px;
+  left: 4%;
+  transform: rotate(var(--r));
+  animation: drift 14s ease-in-out infinite;
 }
 
 .butterfly-right{
-  --r:14deg;
-  bottom:-10px;
-  right:4%;
-  transform:rotate(var(--r));
+  animation: drift 18s ease-in-out infinite;
+  animation-delay: -4s;
+  --r: 14deg;
+  bottom: -30px;
+  right: 4%;
+  transform: rotate(var(--r));
+}
+
+@keyframes flutter{
+
+  0%,100%{
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.05);
+  }
+
 }
 
 /* ANIMACIÓN */
 @keyframes drift{
-  0%,100%{
-    transform: translateY(0) rotate(var(--r,0deg));
+
+  0%{
+    transform: translateY(0) translateX(0) rotate(var(--r));
   }
+
+  25%{
+    transform: translateY(-14px) translateX(6px) rotate(calc(var(--r) + 2deg));
+  }
+
   50%{
-    transform: translateY(-10px) rotate(var(--r,0deg));
+    transform: translateY(-22px) translateX(-6px) rotate(calc(var(--r) - 2deg));
   }
+
+  75%{
+    transform: translateY(-12px) translateX(4px) rotate(calc(var(--r) + 1deg));
+  }
+
+  100%{
+    transform: translateY(0) translateX(0) rotate(var(--r));
+  }
+
 }
-@media (max-width:480px){
 
-  .butterfly{
-    width:70px;
+@media (max-width:480px) {
+
+  .butterfly-left {
+    --r: -12deg;
+    top: -20px;
+    left: 2%;
+    transform: rotate(var(--r));
   }
 
-  .butterfly-left{
-    --r:-12deg;
-    top:-20px;
-    left:2%;
-    transform:rotate(var(--r));
-  }
-
-  .butterfly-right{
-    --r:14deg;
-    bottom:20px;
-    right:2%;
-    transform:rotate(var(--r));
+  .butterfly-right {
+    --r: 14deg;
+    bottom: -10px;
+    right: 2%;
+    transform: rotate(var(--r));
   }
 
 }
