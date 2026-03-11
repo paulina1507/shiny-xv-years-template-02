@@ -2447,8 +2447,8 @@ body.footer-ready .music-btn {
   width: 72px;
   opacity: .75;
   animation:
-    drift 16s ease-in-out infinite,
-    flutter 3.6s ease-in-out infinite;
+    drift 9s ease-in-out infinite,
+    flutter 2.8s ease-in-out infinite;
   will-change: transform;
   backface-visibility: hidden;
 }
@@ -2458,51 +2458,56 @@ body.footer-ready .music-btn {
   top: 200px;
   left: 4%;
   transform: rotate(var(--r));
-  animation: drift 14s ease-in-out infinite;
+  animation: drift 3s ease-in-out infinite;
 }
 
-.butterfly-right{
-  animation: drift 18s ease-in-out infinite;
-  animation-delay: -4s;
+.butterfly-right {
+  animation: drift 9s ease-in-out infinite;
+  animation-delay: -5s;
   --r: 14deg;
   bottom: -30px;
   right: 4%;
   transform: rotate(var(--r));
 }
 
-@keyframes flutter{
+@keyframes flutter {
 
-  0%,100%{
+  0%,
+  100% {
     transform: scale(1);
   }
 
-  50%{
-    transform: scale(1.05);
+  50% {
+    transform: scale(1.06);
   }
 
 }
 
 /* ANIMACIÓN */
-@keyframes drift{
+@keyframes drift {
 
-  0%{
-    transform: translateY(0) translateX(0) rotate(var(--r));
+  0% {
+    transform: translate(0, 0) rotate(var(--r));
   }
 
-  25%{
-    transform: translateY(-14px) translateX(6px) rotate(calc(var(--r) + 2deg));
+  20% {
+    transform: translate(18px, -22px) rotate(calc(var(--r) + 6deg));
   }
 
-  50%{
-    transform: translateY(-22px) translateX(-6px) rotate(calc(var(--r) - 2deg));
+  40% {
+    transform: translate(-12px, -40px) rotate(calc(var(--r) - 6deg));
   }
 
-  75%{
-    transform: translateY(-12px) translateX(4px) rotate(calc(var(--r) + 1deg));
+  60% {
+    transform: translate(22px, -32px) rotate(calc(var(--r) + 4deg));
   }
 
-  100%{
-    transform: translateY(0) translateX(0) rotate(var(--r));
+  80% {
+    transform: translate(-10px, -14px) rotate(calc(var(--r) - 3deg));
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(var(--r));
   }
 
 }
