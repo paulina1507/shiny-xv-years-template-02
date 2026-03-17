@@ -5,13 +5,13 @@
   "tipo_evento": "xv",
   "paquete": "armonia",
   "evento": {
-    "fecha": "2026-05-01T18:00:00",
+    "fecha": "2026-11-06T18:00:00",
     "host": {
-      "nombre": "Gloria Lizbeth"
+      "nombre": "Camila Fernanda"
     }
   },
   "meta": {
-    "title": "Mis XV Años | Gloria Lizbeth",
+    "title": "Mis XV Años | Camila Fernanda",
     "description": "Acompáñanos a celebrar mis XV años",
     "lang": "es",
     "favicon": "favicon.ico"
@@ -77,7 +77,7 @@
   "hero": {
     "enabled": true,
     "names": {
-      "festejada": "XV Gloria Lizbeth"
+      "festejada": "XV Camila Fernanda"
     },
     "countdown_labels": {
       "dias": "Días",
@@ -90,16 +90,16 @@
   "presentacion": {
     "enabled": true,
     "titulo": "Tengo el honor de invitarte a celebrar mis XV años",
-    "nombres": "GLORIA LIZBETH ",
+    "nombres": "CAMILA FERNANDA",
     "frase": "Con la bendición de Dios y en compañía de mis padres:",
     "padres": {
-      "festejada": ["JAIME ARTURO ESTRADA BAEZ", "GLORIA IBAÑEZ ROSAS"]
+      "festejada": ["Alejandro Martínez López", "Sofía Hernández Ruiz"]
     },
-    "padrinos": ["LETICIA AIDE ESTRADA BAEZ"],
+    "padrinos": ["Mariana López Castillo, Héctor Flores Soler"],
     "texto_final": "Este día marca una nueva etapa en mi vida y me encantaría compartirlo contigo.",
     "labels": {
       "padres": "Mis Padres",
-      "padrinos": "Mi Madrina"
+      "padrinos": "Mis padrinos"
     }
   },
 
@@ -111,21 +111,21 @@
         "enabled": true,
         "tipo": "Ceremonia Religiosa",
         "hora": "18:00 HRS",
-        "lugar": "Casa de la Cristiandad",
-        "direccion": ["Av 33 Ote 1625, Mirador, 72530, Puebla."],
-        "mapa": "https://maps.app.goo.gl/WD3a16X15eBys3yq8"
+        "lugar": "Capilla del Rosario",
+        "direccion": ["Av. 4 Pte., Centro histórico de Puebla, 72000, Pue."],
+        "mapa": "https://maps.app.goo.gl/cfPWtXzT6tsDRjed6"
       },
       {
         "enabled": true,
         "tipo": "Recepción",
         "hora": "19:30 HRS",
-        "lugar": "Salon Castell",
+        "lugar": "Salón Las Ninfas",
         "direccion": [
-          "Prol. de la 2 Sur 10529,",
-          "Arboledas de Loma Bella,",
-          "72474, Pue"
+          "Av 21 Pte 1502,",
+          "Barrio de Santiago,",
+          "72410, Pue."
         ],
-        "mapa": "https://maps.app.goo.gl/mji4P6PKy9uHNJwa8"
+        "mapa": "https://maps.app.goo.gl/WMTbFiwsiHbpQRQs9"
       }
     ]
   },
@@ -206,7 +206,7 @@
     "mode": "panel",
 
     "telefono": "522212576641",
-    "mensaje_base": "Hola, confirmo mi asistencia a los XV años de Valeria.",
+    "mensaje_base": "Hola, confirmo mi asistencia a los XV años de Camila Fernanda.",
     "fecha_limite": "2026-04-25",
 
     "qr": { "enabled": true },
@@ -233,7 +233,7 @@
     "final": {
       "titulo": "¡Gracias por confirmar!",
       "texto": "Hemos reservado estos lugares en su honor.",
-      "firma": "XV Años Gloria Lizbeth"
+      "firma": "XV Años Camila Fernanda"
     }
   },
   "editorial": {
