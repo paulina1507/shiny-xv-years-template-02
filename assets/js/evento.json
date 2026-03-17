@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "slug": "xv-gloria-2026",
+  "template": "xv-arco-princess",
+  "tipo_evento": "xv",
+  "paquete": "armonia",
+  "evento": {
+    "fecha": "2026-05-01T18:00:00",
+    "host": {
+      "nombre": "Gloria Lizbeth"
+    }
+  },
+  "meta": {
+    "title": "Mis XV Años | Gloria Lizbeth",
+    "description": "Acompáñanos a celebrar mis XV años",
+    "lang": "es",
+    "favicon": "favicon.ico"
+  },
+
+  "logo": {
+    "type": "text",
+    "value": "Mis XV Años"
+  },
+  "media": {
+    "hero_background": "gallery2.png",
+    "presentacion": "princesa.svg",
+    "vestimenta_icon": "9.svg",
+    "galeria": ["gallery1.png", "gallery2.png", "gallery3.png", "gallery4.png"]
+  },
+  "audio": {
+    "enabled": true,
+    "src": "cancion.mp3",
+    "autoplay_on_open": true,
+    "loop": true,
+    "volume": 1,
+    "fade_in": true,
+    "icons": {
+      "play": "play.svg",
+      "pause": "pause.svg"
+    }
+  },
+
+  "opening": {
+    "enabled": true,
+    "phrase": {
+      "enabled": true,
+      "text": "Con mucha ilusión…",
+      "duration": 1400
+    },
+    "particles": {
+      "enabled": true,
+      "type": "sparkles",
+      "count": 14
+    },
+    "scroll_hint": {
+      "enabled": true,
+      "text": "Desliza para continuar"
+    }
+  },
+
+  "navbar": {
+    "enabled": true,
+    "logo": {
+      "use_global": true
+    },
+    "items": [
+      { "id": "inicio", "label": "Inicio", "href": "#inicio" },
+      { "id": "ubicacion", "label": "Lugar", "href": "#ubicacion" },
+      { "id": "programa", "label": "Programa", "href": "#programa" },
+      { "id": "regalos", "label": "Regalos", "href": "#regalos" },
+      { "id": "vestimenta", "label": "Vestimenta", "href": "#vestimenta" },
+      { "id": "galeria", "label": "Galería", "href": "#galeria" },
+      { "id": "rsvp", "label": "Asistencia", "href": "#rsvp" }
+    ]
+  },
+
+  "hero": {
+    "enabled": true,
+    "names": {
+      "festejada": "XV Gloria Lizbeth"
+    },
+    "countdown_labels": {
+      "dias": "Días",
+      "horas": "Horas",
+      "minutos": "Minutos",
+      "segundos": "Segundos"
+    }
+  },
+
+  "presentacion": {
+    "enabled": true,
+    "titulo": "Tengo el honor de invitarte a celebrar mis XV años",
+    "nombres": "GLORIA LIZBETH ",
+    "frase": "Con la bendición de Dios y en compañía de mis padres:",
+    "padres": {
+      "festejada": ["JAIME ARTURO ESTRADA BAEZ", "GLORIA IBAÑEZ ROSAS"]
+    },
+    "padrinos": ["LETICIA AIDE ESTRADA BAEZ"],
+    "texto_final": "Este día marca una nueva etapa en mi vida y me encantaría compartirlo contigo.",
+    "labels": {
+      "padres": "Mis Padres",
+      "padrinos": "Mi Madrina"
+    }
+  },
+
+  "ubicacion": {
+    "enabled": true,
+    "titulo": "Ubicación",
+    "lugares": [
+      {
+        "enabled": true,
+        "tipo": "Ceremonia Religiosa",
+        "hora": "18:00 HRS",
+        "lugar": "Casa de la Cristiandad",
+        "direccion": ["Av 33 Ote 1625, Mirador, 72530, Puebla."],
+        "mapa": "https://maps.app.goo.gl/WD3a16X15eBys3yq8"
+      },
+      {
+        "enabled": true,
+        "tipo": "Recepción",
+        "hora": "19:30 HRS",
+        "lugar": "Salon Castell",
+        "direccion": [
+          "Prol. de la 2 Sur 10529,",
+          "Arboledas de Loma Bella,",
+          "72474, Pue"
+        ],
+        "mapa": "https://maps.app.goo.gl/mji4P6PKy9uHNJwa8"
+      }
+    ]
+  },
+
+  "programa": {
+    "enabled": true,
+    "titulo": "Programa del Evento",
+    "progress_steps": [20, 40, 60, 80, 100],
+    "items": [
+      {
+        "hora": "18:00 hrs",
+        "texto": "Ceremonia Religiosa",
+        "icono": "5.svg",
+        "lado": "left"
+      },
+      {
+        "hora": "19:30 hrs",
+        "texto": "Recepción",
+        "icono": "6.svg",
+        "lado": "right"
+      },
+      {
+        "hora": "20:30 hrs",
+        "texto": "Cena",
+        "icono": "7.svg",
+        "lado": "left"
+      },
+      {
+        "hora": "21:30 hrs",
+        "texto": "Vals",
+        "icono": "8.svg",
+        "lado": "right"
+      },
+      {
+        "hora": "22:30 hrs",
+        "texto": "Partida de pastel",
+        "icono": "4.svg",
+        "lado": "left"
+      },
+      {
+        "hora": "23:00 hrs",
+        "texto": "Baile y actividades <br> sorpresa",
+        "icono": "1.svg",
+        "lado": "left"
+      }
+    ]
+  },
+
+  "vestimenta": {
+    "enabled": true,
+    "titulo": "Código de Vestimenta",
+    "formal": "FORMAL",
+    "labels": {
+      "mujeres": "",
+      "hombres": ""
+    },
+    "mujeres": "",
+    "hombres": ""
+  },
+
+  "regalos": {
+    "enabled": true,
+    "titulo": "Sugerencia de Regalos",
+    "descripcion": "Tu presencia es el mejor regalo.<br>Si deseas obsequiarme algo, habrá una mesa de regalos en la fiesta.",
+    "items": [
+      { "icono": "10.svg", "label": "Lluvia de Sobres" },
+      { "icono": "11.svg", "label": "Regalo Sorpresa" }
+    ]
+  },
+
+  "galeria": {
+    "enabled": true,
+    "titulo": "Galería"
+  },
+
+  "rsvp": {
+    "enabled": true,
+    "mode": "panel",
+
+    "telefono": "522212576641",
+    "mensaje_base": "Hola, confirmo mi asistencia a los XV años de Valeria.",
+    "fecha_limite": "2026-04-25",
+
+    "qr": { "enabled": true },
+
+    "titulo": "Confirmar asistencia",
+    "texto": "Por favor confirma tu asistencia",
+    "nota": "Te agradeceremos confirmar tu asistencia antes del {{fecha_limite}}.",
+
+    "pase": {
+      "enabled": true,
+      "label": "Pase para"
+    },
+
+    "mesa": {
+      "enabled": true,
+      "label": "Mesa"
+    },
+
+    "botones": {
+      "si": "Sí, asistiré",
+      "no": "No podré asistir"
+    },
+
+    "final": {
+      "titulo": "¡Gracias por confirmar!",
+      "texto": "Hemos reservado estos lugares en su honor.",
+      "firma": "XV Años Gloria Lizbeth"
+    }
+  },
+  "editorial": {
+    "hero": {
+      "enabled": true,
+      "text": "Hoy celebro una nueva etapa en mi vida"
+    },
+    "presentacion": {
+      "enabled": true,
+      "text": "Gracias a quienes me han acompañado siempre"
+    },
+    "ubicacion": {
+      "enabled": true,
+      "text": "El lugar donde todo sucederá"
+    },
+    "programa": {
+      "enabled": true,
+      "text": "Cada momento tiene su magia"
+    },
+    "vestimenta": {
+      "enabled": true,
+      "text": "Una noche para brillar"
+    },
+    "regalos": {
+      "enabled": true,
+      "text": "Tu compañía es lo más importante"
+    },
+    "galeria": {
+      "enabled": true,
+      "text": "Momentos que forman mi historia"
+    },
+    "rsvp": {
+      "enabled": true,
+      "text": "Acompáñanos en este día especial"
+    }
+  },
+  "footer": {
+    "enabled": true,
+    "text": "Diseñado con amor por"
+  }
+}
